@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 12px 28px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); */
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  height: 60px;
+}
+
+.title {
+  font-size: 20px;
+}

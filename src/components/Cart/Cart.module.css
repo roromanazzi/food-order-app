@@ -1,0 +1,36 @@
+.cartItems {
+  padding: 10px 4px;
+  max-height: 12em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cartItems::-webkit-scrollbar {
+  background: transparent;
+  width: 12px;
+}
+
+.cartItems::-webkit-scrollbar-track {
+  background-color: #fcb666;
+  border-radius: 15px;
+  border: solid 2px white;
+}
+
+.cartItems::-webkit-scrollbar-thumb {
+  background: rgb(155, 155, 155);
+  border-radius: 15px;
+}
+
+.cartData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 20px;
+}
+
+.cartActions {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+  justify-content: flex-end;
+}

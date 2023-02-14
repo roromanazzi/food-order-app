@@ -1,0 +1,36 @@
+li {
+  list-style-type: none;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.itemDataContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.itemName {
+  font-size: 16px;
+}
+
+.itemAmount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border: 0.5px solid rgb(146, 146, 146);
+  padding: 1px 8px;
+  border-radius: 4px;
+}
+
+.itemPrice {
+  color: rgb(103, 103, 103);
+}
+
+.buttonContainer {
+  display: flex;
+}

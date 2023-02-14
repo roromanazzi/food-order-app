@@ -1,0 +1,115 @@
+.sectionTwo {
+  /* padding-top: 280px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.bestSellers {
+  padding: 80px 12px 20px;
+  font-size: 16px;
+}
+
+.mealsContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.mealItemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 160px;
+  height: 220px;
+
+  background: radial-gradient(
+    circle at right 10%,
+    rgba(217, 217, 217, 1) 10%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  border-radius: 24px;
+  outline: 8px solid #fcb666;
+  outline-offset: -8px;
+}
+
+.pizza {
+  width: 160px;
+  object-position: center;
+  z-index: 8;
+  object-fit: contain;
+}
+
+.mealDataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 60px;
+  padding: 8px 12px;
+
+  background-color: #f5f5f5;
+  box-shadow: 0 -2px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  z-index: 10;
+
+  transition: 500ms ease-out;
+}
+
+.mealItemContainer:hover .mealDataContainer,
+.mealDataContainer:hover {
+  display: flex;
+  flex-direction: column;
+
+  height: 250px;
+  padding: 12px;
+  gap: 12px;
+
+  background-color: #f5f5f5;
+  box-shadow: 0 -2px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  z-index: 10;
+
+  transition: 500ms ease-out;
+}
+
+.mealDataContainer .mealData,
+.mealDataContainer .mealItemFormContainer {
+  opacity: 0;
+}
+
+.mealItemContainer:hover .mealDataContainer > .mealData,
+.mealDataContainer:hover .mealData,
+.mealDataContainer:hover .mealItemFormContainer {
+  opacity: 1;
+  transition: 200ms;
+  transition-delay: 200ms;
+}
+
+@media (max-width: 700px) {
+  .sectionTwo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .mealsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mealName {
+  font-size: 12px;
+}
+
+.mealDescription {
+  font-size: 10px;
+  text-align: left;
+  line-height: 12px;
+  padding-top: 15px;
+}
+
+.mealPrice {
+  font-size: 14px;
+  padding-top: 10px;
+}
